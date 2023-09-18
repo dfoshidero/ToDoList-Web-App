@@ -1,1 +1,39 @@
 <%- include("partials/header.ejs") %>
+
+    <body>
+
+        <div class="listInput">
+
+            <div id=wholeToDo>
+                
+                <div id="pageTitle">
+                    <h1>Work To Do List</h1>
+                </div>
+
+                <div id="todoForm">
+                    <form action="/submit" id="todoForm" method="POST">
+                        <input type="text" name="todo" placeholder="Add a new todo">
+                        <button type="submit">Add</button>
+                    </form>
+                </div>
+
+        <div class="listContainer">
+            <form action="/delete" method="post">
+              <ul class="todoList">
+                <% for (var i=0; i < workList.length; i++) { %>
+                  <li>
+                    <input type="checkbox" name="itemToDelete" value="<%= workList[i]._id %>">
+                    <label for="<%i%>">
+                      <%= workList[i].name %>
+                    </label>
+                  </li>
+                  <% } %>
+              </ul>
+              <button class="deleteButton" type="submit">Delete Selected</button>
+            </form>
+          </div>
+        </div>
+
+    </body>
+
+    <%- include("partials/footer.ejs") %>

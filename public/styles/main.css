@@ -1,0 +1,192 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Urbanist', sans-serif;
+    }
+
+.listInput {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 50px;
+}
+
+
+
+
+.navbar {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    background: linear-gradient(to top, #63a7d4, #3498db);
+    height: 60px;
+    padding: 0 20px;
+    font-family: 'Major Mono Display', monospace;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+
+.navbar ul li {
+    height: 100%;
+    margin: 0 1px;
+}
+
+.navbar ul li a {
+    color: white;
+    padding: 0px 20px;
+    height: 100%;
+    width: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 1);
+}
+
+.navbar ul li.active a {
+    background: linear-gradient(to top, #6360ca, #443fa7);
+    color: white;
+    font-size: 18px;
+    border-radius: 1px;
+    text-shadow: none;
+}
+
+.navbar ul li a:hover {
+    background: linear-gradient(to top, #6360ca, #443fa7);
+    color: white;
+    border-radius: 1px;
+    transition: background-color 0.7s ease;
+}
+
+
+
+
+#pageTitle {
+    text-align: center;
+    background-color: #3498db;
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: 'Major Mono Display', monospace;
+  }
+
+  #pageTitle h1 {
+    color: white;
+    font-size: 36px;
+    padding: 0px;
+    margin-top: 3px;
+    margin-bottom: 8px
+  }
+
+  #todoForm {
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  
+#todoForm input[type="text"] {
+    padding: 10px;
+    width: 60%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+
+  #todoForm button {
+    padding: 10px 20px;
+    background-color: #3498db; /* Match the header's background color */
+    color: white; /* Text color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  #todoForm button:hover {
+    background-color: #175883; /* Darker blue on hover */
+    font-weight: bold;
+  }
+
+a {
+    text-decoration: none;
+}
+
+.listContainer {
+    display: flex;
+    justify-content: center;
+    width: 500px;
+    margin: auto;
+    margin-top: 20px;
+  }
+
+  .listContainer form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  #wholeToDo{
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: auto;
+    background-color: #f2f2f2; /* Background color */
+    border-radius: 5px; /* Rounded corners */
+    padding: 50px; /* Spacing around the list */
+    padding-bottom: 10px;
+  }
+  
+  .todoList {
+    list-style: none; /* Remove bullet points */
+    padding: 0; /* Remove default padding */
+    margin-right: 70px
+  }
+  
+  .todoList li {
+    display: flex; /* Display list items in a row */
+    align-items: center; /* Vertically center content */
+    margin-bottom: 10px; /* Spacing between list items */
+  }
+  
+  .todoList li input[type="checkbox"] {
+    margin-right: 10px; /* Spacing between checkbox and label */
+    text-decoration: line-through;
+  }
+
+  .todoList li input[type="checkbox"]:checked + label {
+    text-decoration: line-through;
+    color: #999;
+    transition: color 0.2s
+  }
+  
+  .todoList li label {
+    font-size: 18px; /* Font size for the task text */
+    color: #333; /* Text color */
+  }
+
+.deleteButton {
+    background-color: #3498db; /* Match the header's background color */
+    color: white; /* Text color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-left: 20px;
+    padding: 10px;
+  }
+
+.deleteButton:hover {
+    background-color: #175883; /* Darker blue on hover */
+    font-weight: bold;
+  }
