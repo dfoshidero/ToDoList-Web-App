@@ -4,7 +4,7 @@ import { dirname } from 'path';
 import { fileURLToPath } from 'url';
 import mongoose from 'mongoose';
 
-mongoose.connect(`mongodb://127.0.0.1:27017/todolistDB`).then(() => { console.log("Successfully connected to the database.") });
+mongoose.connect(`mongodb+srv://admin-favour:ODJNGBtoJCskt8v9@cluster0.amukh4z.mongodb.net/todolistDB`).then(() => { console.log("Successfully connected to the database.") });
 
 const app = express();
 const port = 3000;
