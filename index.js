@@ -7,7 +7,7 @@ import mongoose from 'mongoose';
 mongoose.connect(`mongodb+srv://admin-favour:ODJNGBtoJCskt8v9@cluster0.amukh4z.mongodb.net/todolistDB`).then(() => { console.log("Successfully connected to the database.") });
 
 const app = express();
-const port = 3000;
+const port = process.env.PORT;
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
 const generalToDoSchema = {
